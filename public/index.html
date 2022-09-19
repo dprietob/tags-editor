@@ -11,12 +11,12 @@
         }
     </style>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
 </head>
 
 <body>
     <h1>Tags Editor demo</h1>
-    <div data-tags-editor>
+    <p class="tg-description">Insert labels by typing them in the text field and then pressing the comma or enter key.</p>
+    <div data-tags-editor data-tags-placeholder="t-shirt,white,outlet" data-tags-list="t-shirt,white,outlet">
     </div>
 
     <h3>Dynamically created</h3>
@@ -28,6 +28,8 @@
             const div = document.createElement("div");
 
             div.dataset["tagsEditor"] = "";
+            div.dataset["tagsPlaceholder"] = "another,editor";
+            div.dataset["tagsList"] = "created,dinamically";
             button.after(div);
             window.__tagsEditor.initializeEditor(div);
             button.removeEventListener("click", createEditor);

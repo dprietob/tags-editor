@@ -59,6 +59,11 @@ document
 );
 ```
 
+### Options
+
+- `data-tags-placeholder="placeholder here"`: defines the input field placeholder.
+- `data-tags-list="tag 1,tag 2,tag 3"`: defines a list of tags in the tags editor load.
+
 ## Supported browsers
 
 Modern browser (Chrome, Firefox, Edge,...) are supported. Tags Editor doesn't work on Internet Explorer.
