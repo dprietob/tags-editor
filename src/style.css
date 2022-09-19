@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+.tg-editor {
+    background: #ffffff;
+    border: solid 1px #e0e0e0;
+    color: #000000;
+    font-family: 'serif';
+    margin-top: 10px;
+    overflow: scroll;
+    padding: 10px;
+}
+
+.tg-editor:focus {
+    outline: none;
+}
+
+.tg-editor .tg-input {
+    width: 100%;
+}
+
+.tg-editor .tg-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tg-editor .tg-wrapper .tg-tag {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    border-radius: 3px;
+    padding: 5px 10px;
+    background: #388cd7;
+    color: #ffffff;
+    font-size: 12px;
+    font-family: "sans-serif";
+}
+
+.tg-editor .tg-wrapper .tg-tag i {
+    margin-left: 5px;
+    color: #ffffff;
+    background: #136ac6;
+    opacity: 0.7;
+    font-size: 16px;
+    border-radius: 50%;
+    cursor: default;
+}
+
+.tg-editor .tg-wrapper .tg-tag i:hover {
+    opacity: 1;
+}

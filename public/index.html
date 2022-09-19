@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tags Editor</title>
+    <style>
+        [data-tags-editor] {
+            height: 200px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+    <h1>Tags Editor demo</h1>
+    <div data-tags-editor>
+    </div>
+
+    <h3>Dynamically created</h3>
+    <button id="create-editor">Create editor</button>
+
+    <script>
+        function createEditor(e) {
+            const button = e.currentTarget;
+            const div = document.createElement("div");
+
+            div.dataset["tagsEditor"] = "";
+            button.after(div);
+            window.__tagsEditor.initializeEditor(div);
+            button.removeEventListener("click", createEditor);
+        }
+
+        (function () {
+            document.getElementById("create-editor").addEventListener("click", createEditor)
+        })();
+    </script>
+</body>
+
+</html>
