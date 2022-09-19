@@ -57,5 +57,5 @@ export const initializeEditor = (editor) => {
     }
 
     input.addEventListener('keyup', (e) => insertTag(e.keyCode));
-    editor.addEventListener('removeTag', (e) => removeTag(e));
+    editor.addEventListener('removedTag', (e) => removeTag(e));
 };

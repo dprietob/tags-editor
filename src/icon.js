@@ -1,6 +1,6 @@
 const closeTag = (tag) => {
     tag.dispatchEvent(new CustomEvent(
-        'removeTag',
+        'removedTag',
         {
             bubbles: true,
             detail: {
