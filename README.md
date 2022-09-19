@@ -48,13 +48,13 @@ document
 
 ## How to get the removed tag
 
-Listen for the `removeTag` event on the editor HTML element.
+Listen for the `removedTag` event on the editor HTML element.
 
 ```
 document
   .querySelectorAll('[data-tags-editor]')
   .forEach(editor =>
-    editor.addEventListener('removeTag', e => console.log(e.detail.tagValue)
+    editor.addEventListener('removedTag', e => console.log(e.detail.tagValue)
   )
 );
 ```
